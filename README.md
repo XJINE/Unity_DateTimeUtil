@@ -1,40 +1,42 @@
-# Unity_DateTimeConverter
+# Unity_DateTimeUtil
 
-``DateTimeConverter`` is just a static class. Not dependence on Unity.
+``DateTimeUtil`` is just a static class. Not dependence on Unity.
 
 ## Import to Your Project
 
 You can import this asset from UnityPackage.
 
-- [DateTimeConverter.unitypackage](https://github.com/XJINE/Unity_DateTimeConverter/blob/master/DateTimeConverter.unitypackage)
+- [DateTimeUtil.unitypackage](https://github.com/XJINE/Unity_DateTimeUtil/blob/master/DateTimeUtil.unitypackage)
 
 ## How to Use
+
+``SytemTimeSecondNow`` will return current h.m.s time in second.
 
 Multiply these parameters. ``using DateTimeConverter`` is useful.
 
 ```csharp
-public static float DayToHour = 24;
-public static float DayToMin  = 24 * 60;
-public static float DayToSec  = 24 * 60 * 60;
-public static float DayToMsec = 24 * 60 * 60 * 100;
+public static float DayToHour        = 24;
+public static float DayToMinute      = 24 * 60;
+public static float DayToSecond      = 24 * 60 * 60;
+public static float DayToMillisecond = 24 * 60 * 60 * 100;
 
-public static float HourToDay  = 1 / 24;
-public static float HourToMin  = 60;
-public static float HourToSec  = 60 * 60;
-public static float HourToMsec = 60 * 60 * 100;
+public static float HourToDay         = 1 / 24;
+public static float HourToMinute      = 60;
+public static float HourToSecond      = 60 * 60;
+public static float HourToMillisecond = 60 * 60 * 100;
 
-public static float MinToDay  = 1 / 60 / 24;
-public static float MinToHour = 1 / 60;
-public static float MinToSec  = 60;
-public static float MinToMsec = 60 * 100;
+public static float MinuteToDay         = 1 / 60 / 24;
+public static float MinuteToHour        = 1 / 60;
+public static float MinuteToSecond      = 60;
+public static float MinuteToMillisecond = 60 * 100;
 
-public static float SecToDay  = 1 / 60 / 60 / 24;
-public static float SecToHour = 1 / 60 / 60;
-public static float SecToMin  = 1 / 60;
-public static float SecToMsec = 100;
+public static float SecondToDay         = 1 / 60 / 60 / 24;
+public static float SecondToHour        = 1 / 60 / 60;
+public static float SecondToMinute      = 1 / 60;
+public static float SecondToMillisecond = 100;
 
-public static float MsecToDay  = 1 / 100 / 60 / 60 / 24;
-public static float MsecToHour = 1 / 100 / 60 / 60;
-public static float MsecToMin  = 1 / 100 / 60;
-public static float MsecToSec  = 1 / 100;
+public static float MillisecondToDay     = 1 / 100 / 60 / 60 / 24;
+public static float MillisecondToHour    = 1 / 100 / 60 / 60;
+public static float MillisecondToMinute  = 1 / 100 / 60;
+public static float MillisecondToSecond  = 1 / 100;
 ```
