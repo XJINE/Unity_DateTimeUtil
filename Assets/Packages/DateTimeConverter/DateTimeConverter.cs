@@ -1,7 +1,7 @@
 ﻿public static class DateTimeConverter
 {
     // NOTE:
-    // "using DateTimeUtil" is useful.
+    // "using DateTimeConverter" is useful.
 
     public static float DayToHour = 24;
     public static float DayToMin  = 24 * 60;
