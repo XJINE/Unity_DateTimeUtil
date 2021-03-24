@@ -10,9 +10,9 @@ You can import this asset from UnityPackage.
 
 ## How to Use
 
-``SytemTimeSecondNow`` will return current h.m.s time in second.
+### Convert Day/Hour/Minute/Second
 
-Multiply these parameters. ``using DateTimeConverter;`` is useful.
+Multiply these parameters.
 
 ```csharp
 public const float DayToHour        = 24;
@@ -41,14 +41,35 @@ public const float MillisecondToMinute  = 1 / 100 / 60;
 public const float MillisecondToSecond  = 1 / 100;
 ```
 
-There are some useful properties.
+or use ``public static float DateTimeNowInSecond;`` property.
+
+### Convert to string
+
+Use popular format or the properties.
 
 ```csharp
-public static float DateTimeNowInSecond;
 
 public static string DateTimeFormatHMSF   = "HH:mm:ss:ff";
 public static string DateTimeFormatYMDHMS = "yy/MM/dd HH:mm:ss";
 
 public static string DateTimeNowInHMSF;
 public static string DateTimeNowInYMDHMS;
+```
+
+### Season
+
+There are some property and methods to get Season.
+
+```csharp
+public enum Season
+{
+    Spring,
+    Summer,
+    Autumn,
+    Winter
+}
+
+public static Season SeasonFromDateTimeNowMonthInJapan
+public static Season SeasonFromDateTimeNowMonth(int shiftMonth)
+public static Season SeasonFromMoneth(int month)
 ```
