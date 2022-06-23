@@ -2,11 +2,13 @@
 
 ``DateTimeUtil`` is just a static class. Not dependence on Unity.
 
-## Import to Your Project
+## Importing
 
-You can import this asset from UnityPackage.
+You can use Package Manager or import it directly.
 
-- [DateTimeUtil.unitypackage](https://github.com/XJINE/Unity_DateTimeUtil/blob/master/DateTimeUtil.unitypackage)
+```
+https://github.com/XJINE/Unity_DateTimeUtil.git?path=Assets/Packages/DateTimeUtil
+```
 
 ## How to Use
 
