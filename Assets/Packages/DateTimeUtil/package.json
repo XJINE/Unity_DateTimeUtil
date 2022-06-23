@@ -1,0 +1,18 @@
+{
+    "name"       : "com.xjine.date_time_util",
+    "displayName": "Date Time Util", 
+    "version"    : "1.0.0",
+    "unity"      : "2021.3",
+    "description": "Utility for System.Date.Time.",
+    "author"     :
+    {
+        "name": "XJINE",
+        "url" : "https://github.com/XJINE"
+    },
+    "keywords":
+    [
+    ],
+    "dependencies":
+    {
+    }
+}
