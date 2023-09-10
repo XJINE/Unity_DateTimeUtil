@@ -1,7 +1,7 @@
 ﻿public static class DateTimeUtil
 {
     // NOTE:
-    // "using DateTimeUtil;" is useful.
+    // "using static DateTimeUtil;" is useful.
 
     #region Field
 
@@ -36,8 +36,12 @@
     // NOTE:
     // These Formats are defined as replaceable value.
 
-    public static string DateTimeFormatHMSF   = "HH:mm:ss:ff";
-    public static string DateTimeFormatYMDHMS = "yy/MM/dd HH:mm:ss";
+    public static string DateTimeFormatMS      = "mm:ss";
+    public static string DateTimeFormatHM      = "HH:mm";
+    public static string DateTimeFormatHMS     = "HH:mm:ss";
+    public static string DateTimeFormatHMSF    = "HH:mm:ss:ff";
+    public static string DateTimeFormatYMDHMS  = "yy/MM/dd HH:mm:ss";
+    public static string DateTimeFormatYMDHMSF = "yy/MM/dd HH:mm:ss:ff";
 
     #endregion Field
 
@@ -56,8 +60,12 @@
         }
     }
 
-    public static string DateTimeNowInHMSF   => System.DateTime.Now.ToString(DateTimeFormatHMSF);
-    public static string DateTimeNowInYMDHMS => System.DateTime.Now.ToString(DateTimeFormatYMDHMS);
+    public static string DateTimeNowInMS      => System.DateTime.Now.ToString(DateTimeFormatMS);
+    public static string DateTimeNowInHM      => System.DateTime.Now.ToString(DateTimeFormatHM);
+    public static string DateTimeNowInHMS     => System.DateTime.Now.ToString(DateTimeFormatHMS);
+    public static string DateTimeNowInHMSF    => System.DateTime.Now.ToString(DateTimeFormatHMSF);
+    public static string DateTimeNowInYMDHMS  => System.DateTime.Now.ToString(DateTimeFormatYMDHMS);
+    public static string DateTimeNowInYMDHMSF => System.DateTime.Now.ToString(DateTimeFormatYMDHMSF);
 
     #endregion Property
 }

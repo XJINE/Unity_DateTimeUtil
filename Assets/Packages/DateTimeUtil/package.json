@@ -1,8 +1,8 @@
 {
     "name"       : "com.xjine.date_time_util",
     "displayName": "Date Time Util", 
-    "version"    : "1.1.0",
-    "unity"      : "2021.3",
+    "version"    : "1.2.0",
+    "unity"      : "2022.3",
     "description": "Utility for System.Date.Time.",
     "author"     :
     {
