@@ -3,8 +3,6 @@
     // NOTE:
     // "using static DateTimeUtil;" is useful.
 
-    #region Field
-
     // CAUTION:
     // 'f' is quite important to make a value as float.
 
@@ -43,10 +41,6 @@
     public static string DateTimeFormatYMDHMS  = "yy/MM/dd HH:mm:ss";
     public static string DateTimeFormatYMDHMSF = "yy/MM/dd HH:mm:ss:ff";
 
-    #endregion Field
-
-    #region Property
-
     public static float DateTimeNowInSecond
     {
         get
@@ -66,6 +60,4 @@
     public static string DateTimeNowInHMSF    => System.DateTime.Now.ToString(DateTimeFormatHMSF);
     public static string DateTimeNowInYMDHMS  => System.DateTime.Now.ToString(DateTimeFormatYMDHMS);
     public static string DateTimeNowInYMDHMSF => System.DateTime.Now.ToString(DateTimeFormatYMDHMSF);
-
-    #endregion Property
 }
